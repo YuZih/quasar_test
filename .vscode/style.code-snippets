@@ -1,0 +1,8 @@
+{
+	"Vue Scoped SCSS Style Block": {
+		"scope": "vue",
+		"prefix": "styletemplate",
+		"body": ["<style lang='scss' scoped>\n", "</style>"],
+		"description": "Style 範本"
+	}
+}

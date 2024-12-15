@@ -1,0 +1,79 @@
+{
+	// Editor Setup
+	"editor.formatOnType": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.tabSize": 2,
+	"editor.guides.bracketPairs": "active",
+	"editor.suggestSelection": "first",
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": true,
+		"strings": true
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll": "never",
+		"source.fixAll.stylelint": "explicit"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"files.autoSave": "afterDelay",
+	"files.associations": {
+		"editor.snippetSuggestions": "top",
+		"*.css": "postcss"
+	},
+	"files.watcherExclude": {
+		"**/.nuxt/**": true
+	},
+	"git.confirmSync": false,
+	"css.lint.propertyIgnoredDueToDisplay": "warning",
+
+	// Eslint Setup
+	"eslint.useFlatConfig": true, // Required in vscode-eslint < v3.0.10 only
+
+	// Prettier Setup
+	"prettier.enable": true,
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	// Stylelint Setup
+	// 避免內建的驗證功能與 Stylelint 的驗證產生衝突
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"stylelint.validate": ["css", "scss", "vue"],
+
+	// i18n Setup
+	"i18n-ally.localesPaths": "locales",
+	"i18n-ally.keystyle": "nested",
+	"i18n-ally.sortKeys": true,
+	"i18n-ally.namespace": true,
+	"i18n-ally.enabledParsers": ["json", "yaml", "ts", "js"],
+	"i18n-ally.sourceLanguage": "zh-TW",
+	"i18n-ally.displayLanguage": "zh-TW",
+	"i18n-ally.enabledFrameworks": ["vue"],
+
+	// Path Intellisense Setup
+	"typescript.suggest.paths": false,
+	"javascript.suggest.paths": false,
+
+	// Others
+	"vscodeCustomCodeColor.highlightValue": [
+		"v-loading",
+		"v-auth",
+		"v-copy",
+		"v-longpress",
+		"v-optimize",
+		"v-perms",
+		"v-ripple"
+	],
+	"vscodeCustomCodeColor.highlightValueColor": "#ffa6f2",
+
+	// Spelling Setup
+	"cSpell.words": []
+}

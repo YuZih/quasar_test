@@ -1,0 +1,29 @@
+@use "quasar/src/css/variables" as q;
+@use "sass:map";
+
+/* Colors Variables Override & Custom */
+// Set my own colors
+$primary: #09e6ff;
+$primary-01: #9dcbff;
+$secondary: #7b00d9;
+$secondary-01: #975abe;
+$grayscale-01: #252424;
+$grayscale-02: #7f7f7f;
+$custom-colors: (
+  primary: $primary,
+  primary-01: $primary-01,
+  secondary: $secondary,
+  secondary-01: $secondary-01,
+  grayscale-01: $grayscale-01,
+  grayscale-02: $grayscale-02
+);
+
+@each $name, $color in $custom-colors {
+  // Override Quasar colors
+  .bg-#{$name} {
+    background: $color;
+  }
+  .text-#{$name} {
+    color: $color;
+  }
+}

@@ -1,0 +1,15 @@
+{
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"stylelint.vscode-stylelint",
+		"lokalise.i18n-ally",
+		"warmthsea.vscode-custom-code-color",
+		"vscode-icons-team.vscode-icons",
+		"davidanson.vscode-markdownlint",
+		"csstools.postcss",
+		"mikestead.dotenv",
+		"mhutchie.git-graph",
+		"christian-kohler.path-intellisense"
+	]
+}
